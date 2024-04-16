@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Enter From - Bonfire GameWeb News</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/form.js"></script>
+</head>
+
+<body>
+    <div class="header">
+      <a href="index.html">
+        <img class="GameWeb-logo" src="image/GameWebLogo-white.png" alt="">
+        <h1>From</h1>
+      </a>
+    </div>
+
+    <nav>
+      <ol class="menu_bar_box">
+        <li class="list_box"><a href="index.html">Home</a></li>
+        <li class="list_box"><a href="news.html">News</a></li>
+        <li class="list_box"><a href="blog.html">Blog</a></li>
+        <li class="list_box"><a href="gallery.html">Gallery</a></li>
+        <li class="list_box"><a href="form.html">Form</a></li>
+      </ol>
+    </nav>
+
+    <div class="main">
+      <h1 class="path_title"><span class="highlight">✦</span> Form</h1>
+      <p class="form_description">This new website is on testing. 
+        We would like to know your thinking about our website. Please take your time to fill the form!</p>
+      <!-- Form location -->
+      <!-- ignore the return error, the window.location.assign is work. -->
+      <form onSubmit="return SubmitSuccessfulPage();"> 
+            <div class="form-group">
+              <label for="name"><b>Name</b></label>
+              <span class="text-red">*</span>
+              <input type="text" placeholder="Enter name" id="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email"><b>Email</b></label>
+              <span class="text-red">*</span>
+              <input type="email" placeholder="Enter Email" id="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="Question"><b>Q1.Do you like video games? Why or why not?</b></label>
+              <span class="text-red">*</span><p>
+              <input type="text" style="width:350px" id="Q1Answer" required></p>
+            </div>
+
+            <div class="form-group">
+              <label for="Question"><b>Q2.Which one is the best gaming news on the website?</b></label>
+              <span class="text-red">*</span><p>
+              <input type="text" style="width:350px" id="Q2Answer" required></p>
+            </div>
+
+            <div class="form-group">
+              <label for="Question"><b>Q3.Did you like reading the article on the News / Blog? Why or why not?</b></label>
+              <span class="text-red">*</span><p>
+              <input type="text" style="width:350px" id="Q3Answer" required></p>
+            </div>
+
+            <div class="form-group">
+              <label for="rate"><b>Rate ☹️ - 😀</b></label>
+              <span class="text-red">*</span>
+              <input type="range" min="0" max="5" id="rate">
+            </div>
+
+            <div class="form-group">
+
+              <textarea id="comment" name="comment" placeholder="Give a Comment" style="height:150px"></textarea>
+            </div>
+
+            <div class="form-group">
+              <input type="Submit" id="submit" value="Submit" required>
+              <input type="Reset" id="reset" value="Reset" required>
+            </div>
+          </div>
+  </form>
+
+  <div class="footer">
+    Made by Zain HAmid<br>
+    Copyright © by: Zain Hamid
+  </div>
+
+</body>
+</html>
